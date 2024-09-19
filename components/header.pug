@@ -1,0 +1,66 @@
+header.header
+	.container
+		.header-row
+			.header-left 
+				a.header-logo(href="/") 
+					img(src="images/header-logo.svg", alt="Bright Smile")
+			.header-right 
+				.header-top 
+					.header-info-wrap 
+						.header-info-item 
+							.header-info-icon 
+								img(src="images/point.svg", alt="")
+							.header-info-text
+								.header-info-title Address
+								.header-info-name Star Street, 42, Fantasy City
+						a(href="tel:+(6) 666-653-4523").header-info-item 
+							.header-info-icon
+									img(src="images/phone.svg", alt="")
+							.header-info-text
+								.header-info-title Phone
+								.header-info-name +(6) 666-653-4523
+						a(href="mailto: example@gmail.com").header-info-item 
+							.header-info-icon 
+								img(src="images/message.svg", alt="")
+							.header-info-text
+								.header-info-title Email
+								.header-info-name example@gmail.com
+					.header-social-wrap
+						a(href="#") 
+							img(src="images/whatsapp.svg", alt="whatsapp")
+						a(href="#") 
+							img(src="images/telegram.svg", alt="whatsapp")
+						a(href="#") 
+							img(src="images/twitter.svg", alt="whatsapp")
+				.header-bottom 
+					nav.menu-nav 
+						ul 
+							li.menu-item.current-menu-item
+								a(href="#") Home 
+							li.menu-item
+								a(href="#") About 
+							li.menu-item.menu-item-has-children
+								a(href="#") Services 
+								ul.sub-menu 
+									li 
+										a(href="#") Services
+									li 
+										a(href="#") Service Details
+							li.menu-item.menu-item-has-children
+								a(href="#") Team 
+								ul.sub-menu 
+									li 
+										a(href="#") Team
+									li 
+										a(href="#") Team Details
+							li.menu-item.menu-item-has-children
+								a(href="#") Blog 
+								ul.sub-menu 
+									li 
+										a(href="#") Blog
+									li 
+										a(href="#") Blog Details
+							li.menu-item
+								a(href="#") Contact
+					.button-wrap
+						a(href="#").button-v1 Appointment Now
