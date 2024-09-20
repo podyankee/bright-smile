@@ -1,7 +1,9 @@
 :root
 	--font: 'Root'
 	--color-1: #2581d9
+	--color-1-hover: #2671b7
 	--color-2: #41bef7
+	--color-2-hover: #3ba8db
 	--color-text: #636060
 	--color-3: #bceafe
 	--color-4: #f6ecff
@@ -20,6 +22,8 @@ html
 a
 	text-decoration: none
 	color: inherit
+a, button
+	cursor: pointer
 
 ul
 	list-style: none
@@ -80,3 +84,33 @@ body
 	font-weight: 700
 	display: inline-block
 	text-transform: uppercase
+	transition: $trs
+	&:hover
+		background-color: var(--color-1-hover)
+.button-v2
+	background-color: var(--color-2)
+	color: #fff
+	padding: 16px 42px
+	border-radius: 30px
+	text-align: center
+	font-weight: 700
+	display: inline-block
+	text-transform: uppercase
+	transition: $trs
+	&:hover
+		background-color: var(--color-2-hover)
+.button-v3
+	border: 1px solid #fff
+	color: #fff
+	padding: 16px 42px
+	border-radius: 30px
+	text-align: center
+	font-weight: 700
+	display: inline-block
+	text-transform: uppercase
+	transition: $trs
+	&:hover
+		background-color: #fff
+		color: var(--color-2-hover)
+h1, h2, h3, h4, h5, h6, p
+	margin-bottom: 20px
