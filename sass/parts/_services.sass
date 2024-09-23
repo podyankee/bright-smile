@@ -1,0 +1,50 @@
+.services
+	&-wrap
+		display: flex
+		row-gap: 60px
+		column-gap: 40px
+		flex-wrap: wrap
+	&-item
+		width: calc( 25% - 30px )
+		border-right: 1px solid #e3e3e3
+		padding-right: 40px
+		&:nth-child(4n)
+			border-right: none
+		&:hover
+			.services-icon
+				transform: scaleX(-1)
+	&-icon
+		display: flex
+		align-items: center
+		justify-content: center
+		background-color: var(--color-4)
+		width: 80px
+		height: 80px
+		border-radius: 100%
+		margin-bottom: 25px
+		transition: transform 0.5s ease
+		img
+			display: block
+			max-width: 40px
+	&-title
+		font-size: 20px
+		font-weight: 700
+		margin-bottom: 12px
+	&-desc
+		color: var(--color-text)
+		margin-bottom: 25px
+		p
+			margin-bottom: 0
+	&-readmore
+		font-weight: 700
+		display: flex
+		align-items: center
+		column-gap: 22px
+		color: var(--color-1)
+		&:hover
+			span:nth-child(2) img
+				transform: translateX(10px)
+		span:nth-child(2)
+			img
+				transition: transform 0.5s ease
+				display: block
