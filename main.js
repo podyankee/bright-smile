@@ -1,7 +1,10 @@
 import './sass/style.sass';
+import 'image-compare-viewer/dist/image-compare-viewer.min.css';
+import ImageCompare from 'image-compare-viewer';
 
 import { initSubmenu } from '/scripts/initSubmenu';
 import animationNumbers from '/scripts/animationNumbers';
+import { initProgress } from '/scripts/initProgress';
 
 const initNumbersAnimation = () => {
 	animationNumbers([
@@ -32,9 +35,16 @@ const initNumbersAnimation = () => {
 	]);
 };
 
+const initImagesCompare = () => {
+	const element = document.getElementById('image-compare');
+	const viewer = new ImageCompare(element).mount();
+};
+
 const init = () => {
 	initSubmenu();
 	initNumbersAnimation();
+	// initProgress();
+	initImagesCompare();
 };
 
 document.addEventListener('DOMContentLoaded', init);
