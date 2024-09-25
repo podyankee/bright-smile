@@ -1,3 +1,0 @@
-const initImagesCompare = second => {
-	third;
-};

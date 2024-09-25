@@ -43,7 +43,7 @@ const initImagesCompare = () => {
 const init = () => {
 	initSubmenu();
 	initNumbersAnimation();
-	// initProgress();
+	initProgress();
 	initImagesCompare();
 };
 
