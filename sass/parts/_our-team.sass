@@ -1,0 +1,62 @@
+.team
+	&-row
+		display: flex
+		flex-wrap: wrap
+		gap: 20px
+	&-item
+		background-color: #fff
+		box-shadow: 0 4px 18px 3px rgba(133, 123, 133, 0.14)
+		border-radius: 20px
+		padding: 15px
+		width: calc(25% - 16.5px)
+		&:hover
+			.team-social
+				bottom: 8px
+	&-thumb
+		border-radius: 19px
+		overflow: hidden
+		position: relative
+		height: 290px
+	&-image, &-image img
+		display: block
+		height: 100%
+	&-image img
+		width: 100%
+		height: 100%
+		object-fit: cover
+	&-social
+		position: absolute
+		bottom: -50px
+		left: 50%
+		transition: $trs
+		transform: translateX(-50%)
+		display: flex
+		column-gap: 7px
+		a
+			background-color: #fff
+			width: 27px
+			height: 27px
+			border-radius: 100%
+			display: flex
+			align-items: center
+			justify-content: center
+			transition: $trs
+			img
+				transition: $trs
+			&:hover
+				background-color: var(--color-1)
+				img
+					filter: brightness(10)
+	&-body
+		text-align: center
+		padding: 20px 0
+	&-title
+		display: inline-block
+		font-size: 20px
+		font-weight: 700
+		margin-bottom: 6px
+	&-spec
+		color: var(--color-text)
+		font-size: 14px
+		font-weight: 500
+		text-transform: uppercase
